@@ -154,7 +154,7 @@ const myLearningProgress = ref([
 // Color classes for course cards
 const colorClassesOverlay = [
   "bg-green-500/5",
-  "bg-blue-900/5",
+  "bg-yellow-500/5",
   "bg-blue-600/5",
   "bg-green-600/5",
   "bg-green-600/5",
@@ -162,7 +162,7 @@ const colorClassesOverlay = [
 
 const colorClassesText = [
   "text-green-500",
-  "text-blue-900",
+  "text-yellow-500",
   "text-blue-400",
   "text-[#7CB342]",
   "text-[#7CB342]",
