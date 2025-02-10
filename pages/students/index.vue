@@ -42,8 +42,15 @@
               <UProgress :value="item.progress" indicator />
             </div>
             <div class="flex items-center justify-between">
-              <p class="text-sm">Continue</p>
-              <UIcon name="i-heroicons-arrow-right" class="cursor-pointer"/>
+              <div class="flex font-bold text-primary items-center gap-3" v-if="item.progress >=100">
+                <p class="text-sm">completed</p>
+              <UIcon name="i-heroicons-check" class="cursor-pointer text-lg"/>
+              </div>
+              <div class="flex items-center gap-3" v-else>
+                <p class="text-sm">Continue</p>
+                <UIcon name="i-heroicons-arrow-right" class="cursor-pointer"/>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -99,7 +106,7 @@ const accounts = ref([
     type: "12",
     account: "1234567890",
     swift: "ABCDEF",
-    progress: 30,
+    progress: 100,
     branch: "Main Branch",
     currency: "RWF",
   },
