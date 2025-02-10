@@ -26,17 +26,17 @@
 
   <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
     <div class="grid grid-cols-3 gap-3 mb-2">
-      <dl class="bg-orange-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
-        <dt class="w-8 h-8 rounded-full bg-orange-100 dark:bg-gray-500 text-orange-600 dark:text-orange-300 text-sm font-medium flex items-center justify-center mb-1">12</dt>
-        <dd class="text-orange-600 dark:text-orange-300 text-sm font-medium">To do</dd>
-      </dl>
       <dl class="bg-teal-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
         <dt class="w-8 h-8 rounded-full bg-teal-100 dark:bg-gray-500 text-teal-600 dark:text-teal-300 text-sm font-medium flex items-center justify-center mb-1">23</dt>
-        <dd class="text-teal-600 dark:text-teal-300 text-sm font-medium">In progress</dd>
+        <dd class="text-teal-600 dark:text-teal-300 text-sm font-medium">To Do</dd>
+      </dl>
+      <dl class="bg-black dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
+        <dt class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-500 text-gray-900 dark:text-gray-900 text-sm font-medium flex items-center justify-center mb-1">23</dt>
+        <dd class="text-black dark:text-black text-sm font-medium">In progress</dd>
       </dl>
       <dl class="bg-blue-50 dark:bg-gray-600 rounded-lg flex flex-col items-center justify-center h-[78px]">
-        <dt class="w-8 h-8 rounded-full bg-blue-100 dark:bg-gray-500 text-blue-600 dark:text-blue-300 text-sm font-medium flex items-center justify-center mb-1">64</dt>
-        <dd class="text-blue-600 dark:text-blue-300 text-sm font-medium">Done</dd>
+        <dt class="w-8 h-8 rounded-full bg-violet-100 dark:bg-gray-500 text-violet-600 dark:text-violet-300 text-sm font-medium flex items-center justify-center mb-1">64</dt>
+        <dd class=" text-violet-600 dark:text-violet-400 text-sm font-medium">Done</dd>
       </dl>
     </div>
     <button data-collapse-toggle="more-details" type="button" class="hover:underline text-xs text-gray-500 dark:text-gray-400 font-medium inline-flex items-center">Show more details <svg class="w-2 h-2 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -64,24 +64,24 @@
   </div>
 
   <!-- Radial Chart -->
-  <div class="bg-white relative px-6 py-4 w-[50%] h-[500px] rounded-lg shadow">
-    <div class="flex items-center justify-between mb-6">
+  <div class=" relative px-6 py-4 w-[80%] rounded-lg shadow">
+    <div class="flex items-center justify-between ">
       <h2 class="text-xl text-gray-800 font-semibold">Analytics</h2>
     </div>
-    <div class=" h-[400px] flex justify-center">
+    <div class=" h-[300px] flex justify-center">
       <Doughnut :data="chartData" :options="options" />
-      <div class="absolute bottom-1  w-full flex justify-center gap-4 text-sm text-gray-600">
+      <div class="absolute bottom-[-20px] w-full flex justify-center gap-4 text-sm text-gray-600">
         <div class="flex items-center gap-2">
           <div class="w-3 h-3 rounded-full bg-[#8B5CF6]"></div>
-          <span>Sales (55.5%)</span>
+          <span>Inprogress (55.5%)</span>
         </div>
         <div class="flex items-center gap-2">
           <div class="w-3 h-3 rounded-full bg-[#10B981]"></div>
-          <span>Distribute (33.5%)</span>
+          <span>To Do (33.5%)</span>
         </div>
         <div class="flex items-center gap-2">
           <div class="w-3 h-3 rounded-full bg-[#1C1C28]"></div>
-          <span>Returns (11%)</span>
+          <span>Done (11%)</span>
         </div>
       </div>
     </div>

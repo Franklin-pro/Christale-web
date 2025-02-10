@@ -52,7 +52,7 @@
 
     <!-- My Learning & Planning -->
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-      <div class="p-4 border shadow-lg rounded-lg">
+      <div class="p-4 border  h-[300px] shadow-lg rounded-lg">
         <h3 class="font-semibold mb-4">My Learning</h3>
         <ul>
           <div v-for="(item, index) in myLearningProgress" :key="index">
